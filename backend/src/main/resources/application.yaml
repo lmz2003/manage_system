@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: Homework
+  datasource:
+    url:
+    username:
+    password:
+    hikari:
+      max-lifetime: 30000
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8088
+  tomcat:
+    max-swallow-size: 50MB
+
+#aliyun:
+#  oss:
+
+
+hitweb:
+  jwt:
+    secret: asdfghjkl
+    expire: 7200000000
+    tokenName: token
